@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <link rel="stylesheet" href="css/styles_contacto.css">
+    <style>
+        /* Estilos para el cuerpo */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgb(44, 221, 221), rgb(35, 11, 124));
+            background-size: 200% 200%;
+            animation: moverColores 5s infinite alternate;
+            opacity: 0; /* Oculta el contenido inicialmente */
+            transition: opacity 2s ease-in; /* Transición para el desvanecimiento */
+        }
+
+        @keyframes moverColores {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Estilos para los títulos */
+        h1 {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilos del contenedor */
+        .container {
+            display: flex;
+            background-color: #e5eef0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos del contenido */
+        .content {
+            margin-right: 20px;
+        }
+
+        /* Estilos de los títulos en el contenido */
+        .content h2, .content h3 {
+            color: #333;
+        }
+
+        /* Estilos de los párrafos en el contenido */
+        .content p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Estilos para la imagen */
+        .image img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>CONTACTO</h2>
+            <p>feriaduniversidades@colegioguanenta.edu.co</p>
+
+            <h3>RECTOR</h3>
+            <p>Lic. José Antonio Ballesteros Vásquez</p>
+
+            <h3>COORDINACIÓN DEL EVENTO</h3>
+            <p>Ph.D. Liliana Ayala Quiñonez<br>
+               layala@colegioguanenta.edu.co</p>
+            <p>Mg. Milton Javier Ulloa Jiménez<br>
+               mullao@colegioguanenta.edu.co</p>
+
+            <h3>DESARROLLADORES</h3>
+            <p>Felipe Jimenez: andresjimenez@colegioguanenta.edu.co<br>        
+                Renyelis Luyando: renyelisluyando@colegioguanenta.edu.co<br>
+                Paul Colmenares: paulcolmenares@colegioguanenta.edu.co<br>       
+                Andres Garcia: andresgarcia@colegioguanenta.edu.co<br>
+                Sebastian Hernandez: sebastianhernandez@colegioguanenta.edu.co<br>     
+                Lizeth Ayala: lizethayala@colegioguanenta.edu.co<br>
+                Daniel Sierra: danielsierra@colegioguanenta.edu.co</p>
+
+            <h3>ESPECIALIDAD DE SISTEMAS</h3>
+        </div>
+        <div class="image">
+            <img src="img/guanenta.jpeg" alt="Escudo del Colegio San José de Guanenta">
+        </div>
+    </div>
+
+    <!-- JavaScript para activar el efecto de desvanecimiento -->
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = 1; /* Mostrar el contenido cuando la página haya cargado */
+        };
+    </script>
+
+    
+</body>
+</html>
