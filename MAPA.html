@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA</title>
+    <style>
+        /* Estilos para el cuerpo */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, rgb(67, 219, 80), rgb(3, 109, 38));
+            background-size: 200% 200%;
+            animation: moverColores 5s infinite alternate;
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+
+        /* Animación para el movimiento del fondo */
+        @keyframes moverColores {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Estilos para centrar y ajustar la imagen */
+        .image img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadimos una transición suave */
+        }
+
+        /* Efecto hover para elevar la imagen */
+        .image img:hover {
+            transform: translateY(-10px); /* Eleva la imagen 10px hacia arriba */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Añade una sombra más pronunciada */
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="img/guanenta.jpeg" alt="Imagen central">
+    </div>
+
+    <!-- JavaScript para activar el efecto de desvanecimiento -->
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = 1; /* Mostrar el contenido cuando la página haya cargado */
+        };
+    </script>
+</body>
+</html>
